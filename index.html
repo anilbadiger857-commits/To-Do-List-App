@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quest Master - Gamified To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 Quest Master</h1>
+        
+        <div class="stats-panel">
+            <div class="stat-item">
+                <span class="stat-label">Level</span>
+                <span class="stat-value" id="level">1</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">XP</span>
+                <span class="stat-value" id="xp">0</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Streak</span>
+                <span class="stat-value" id="streak">0🔥</span>
+            </div>
+        </div>
+        
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+        
+        <div class="input-section">
+            <input type="text" id="taskInput" placeholder="Enter a new quest...">
+            <button id="addBtn">Add Quest</button>
+        </div>
+        
+        <ul id="taskList"></ul>
+        
+        <div class="achievements" id="achievements"></div>
+    </div>
+    
+    <div class="notification" id="notification"></div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
